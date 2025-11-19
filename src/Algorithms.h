@@ -1,8 +1,10 @@
 #ifndef ALGORITHMS_H
 #define ALGORITHMS_H
 
+// Пространство имён чтобы структурировать код
 namespace alg
 {
+    // Линейный поиск: сложность алгоритма - O(n), пространственная сложность - O(1)
 	template <typename Iter, typename Type>
 	Iter find(Iter begin, Iter end, const Type& object)
 	{
@@ -10,6 +12,7 @@ namespace alg
 		return end;
 	}
 
+    // Бинарный поиск: сложность алгоритма - O(log n), пространственная сложность - O(log n)
 	template <typename Type>
 	bool bfind(Type massive[], int begin, int end, const Type& object)
 	{
